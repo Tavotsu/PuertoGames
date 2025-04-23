@@ -1,3 +1,4 @@
+/*Variables*/
 :root{
     --color-texto: #242424;
     --color-fondo: #f5f5f5;
@@ -9,24 +10,24 @@
         font-style: normal;
     };
 }
-
+/*Reset general*/
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-
-
+/*Formatos para navbar*/
 li{
     list-style: none;
 }
+
 ul {
     display: flex;
     margin: 0;
     padding: 0;
     align-items: center;
 }
+
 .navbar{
     display: flex;
     justify-content: right;
@@ -35,6 +36,7 @@ ul {
     background-color: var(--color-fondo);
     padding: var(--padding-general);
 }
+
 .navbar-item {
     color: var(--color-texto);
     text-decoration: none;
@@ -46,6 +48,7 @@ ul {
     font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
 }
+
 .navbar-item:hover{
     background-color: none;
     color: #000;
@@ -57,9 +60,114 @@ ul {
     justify-content: left;
     align-items: center;
 }
+
 .logo{
     width: 95px;
     justify-self: left;
     margin-right: 1400px;
     display: flex;
+    padding-left: 20px;
+}
+/*Fin formatos navbar*/
+
+/*Hero*/
+.imagen-hero{
+    filter: brightness(0.6);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.texto-hero{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.texto-hero h1,p{
+    font-size: 50px;
+    font-family: "Inter";
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.boton-catalogo-hero {
+    display: inline-block;
+    font-family: "Inter";
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 2.5rem;
+    border-radius: 5px;
+    background-color: #007BFF; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+
+.boton-catalogo-hero:hover{
+    background-color: #005dc0;
+    transition: 0.3s ease-in-out;
+}
+
+/*Categorias*/
+
+
+/*Galeria imagenes*/
+
+
+/*Seccion contactanos*/
+
+
+/*Footer*/
+
+
+/*Media querys*/
+
+/*Estilo para pantallas grandes*/
+@media (min-width: 1024px) {
+    .navbar {
+        justify-content: space-between;
+    }
+    .logo {
+        margin-right: 0;
+    }
+}
+
+/*Estilo para pantallas medianas*/
+@media (max-width: 1023px) and (min-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-item {
+        padding: 1rem;
+    }
+    .logo {
+        margin-right: 0;
+    }
+}
+
+/*Estilo para telefonos*/
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-item {
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+    .logo {
+        width: 70px;
+        margin-right: 0;
+    }
+    .hero-image {
+        height: 30%;
+    }
 }

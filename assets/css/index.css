@@ -32,6 +32,7 @@ ul {
     justify-content: right;
     align-items: center;
     text-decoration: none;
+    width: 100%;
     background-color: var(--color-fondo);
     padding: var(--padding-general);
 }
@@ -45,6 +46,7 @@ ul {
     padding: var(--padding-general);
     font-size: 1.2rem;
     transition: all 0.3s ease-in-out;
+    justify-self: right;
 }
 .navbar-item:hover{
     background-color: none;
@@ -53,13 +55,34 @@ ul {
     text-decoration: none;
 }
 .logo-container{
-    display: flex;
-    justify-content: left;
-    align-items: center;
+    display: grid;
+    
+}
+.logo-container a{
+    width: 10%;
 }
 .logo{
-    width: 95px;
-    justify-self: left;
-    margin-right: 1400px;
+    width: 150%;
     display: flex;
+}
+.fondo-hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("assets/img/fondo-hero.jpg");    
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.6);
+}
+
+
+
+@media(max-width:768px){
+    main{
+        grid-template-columns: 1fr;
+    }
+    nav ul{
+        grid-template-columns: 1fr;
+    }
 }

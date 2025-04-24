@@ -338,9 +338,14 @@ ul {
     margin-bottom: 1rem;
 }
 
+.container-logo-footer{
+    display: flex;
+    justify-content: center;
+}
 
-
-
+.logo-footer{
+    width: 11%;
+}
 
 /*Media querys*/
 

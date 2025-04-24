@@ -113,7 +113,8 @@ ul {
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
     gap: 1.5rem; 
     justify-items: center;
-    margin-top: 6rem; 
+    margin-top: 6rem;
+    margin: 4%; 
 } 
 
 .galeria-item img {
@@ -166,6 +167,15 @@ ul {
     font-size: 14px;
     color: #ffffff;
     margin-bottom: 1rem;
+}
+
+.container-logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 11%;
 }
 
 /*Media querys*/

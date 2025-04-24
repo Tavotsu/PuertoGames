@@ -160,6 +160,38 @@ ul {
     background-color: #0056b3;
 }
 
+/*Footer*/
+
+.pie-pagina{
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 14px;
+}
+
+.pie-pagina h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.pie-pagina p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.container-logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 11%;
+}
 
 
 /*Media querys*/

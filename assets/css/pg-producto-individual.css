@@ -162,6 +162,15 @@ ul {
     margin: 0.2rem 0;
 }
 
+.container-logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-footer{
+    width: 11%;
+}
+
 /*Navbar con poco espacio*/
 @media (max-width: 1023px) {
     .navbar{

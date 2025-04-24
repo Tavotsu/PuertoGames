@@ -3,21 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puerto Games - Tu tienda de videojuegos</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <title>PuertoGames - Tu tienda de videojuegos</title>
+    <link rel="stylesheet" href="assets/css/contacto.css">
+    <script src="src/js/menu-hamburguesa.js"></script>
+    <!-- Fuente de google: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+   
 </head>
 <body>
+    <!--Navbar-->
     <nav class="navbar">
         <div class="logo-container">
             <a href="index.html">
                 <img src="assets/img/logosinbg.png" alt="logo puerto games" class="logo">
             </a>
         </div>
-        <ul>
+        <button class="menu-presionado" aria-label="Abrir menú">&#9776;</button>
+        <ul class="navbar-links">
             <li><a class="navbar-item" href="index.html">Inicio</a></li>
             <li><a class="navbar-item" href="productos.html">Productos</a></li>
             <li><a class="navbar-item" href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <!--Seccion formulario-->
+    <main class="contacto-main">
+        <h2>Contáctanos</h2>
+        <!--Formulario-->
+        <form class="form-contacto">
+            <!--Nombre-->
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <!--Correo-->
+            <div class="form-group">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+            <!--Mensaje-->
+            <div class="form-group">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" maxlength="260" required></textarea>
+            </div>
+            <!--Enviar-->
+            <div class="form-group">
+                <button type="submit" class="boton-enviar">Enviar</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>

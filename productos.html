@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puerto Games - Lista de pri</title>
-    <link rel="stylesheet" href="assets/css/index.css">
+    <title>PuertoGames - Productos</title>
+    <link rel="stylesheet" href="assets/css/productos.css">
+    <script src="src/js/menu-hamburguesa.js"></script>
+    <!-- Fuente de google: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
@@ -13,11 +18,56 @@
                 <img src="assets/img/logosinbg.png" alt="logo puerto games" class="logo">
             </a>
         </div>
-        <ul>
+        <button class="menu-presionado" aria-label="Abrir menú">&#9776;</button>
+        <ul class="navbar-links">
             <li><a class="navbar-item" href="index.html">Inicio</a></li>
             <li><a class="navbar-item" href="productos.html">Productos</a></li>
             <li><a class="navbar-item" href="contacto.html">Contacto</a></li>
         </ul>
     </nav>
+    <h2 class="titulo-galeria">Nuestros Productos</h2>
+    <div class="galeria-contenedor">
+        
+        
+        <!--Producto 1-->
+        <div class="galeria-item">
+            <a href="producto1.html"><img src="assets/img/producto1.png" alt="Producto 1"></a>
+            <p>The legend of zelda: Breath of the wild - Nintendo Switch <br> &#36;59.990</p>
+        </div>
+        <!--Producto 2-->
+        <div class="galeria-item">
+            <a href="producto2.html"><img src="assets/img/producto2.png" alt="Producto 2"></a>
+            <p>Cyberpunk 2077 Ultimate edition - PS5 <br> &#36;58.990</p>
+        </div>
+        <!--Producto 3-->
+        <div class="galeria-item">
+            <a href="producto3.html"><img src="assets/img/producto3.png" alt="Producto 3"></a>
+            <p>FIFA 25 - PS5 <br> &#36;49.990</p>
+        </div>
+        <!--Producto 4-->
+        <div class="galeria-item">
+            <a href="producto4.html"><img src="assets/img/producto4.png" alt="Producto 4"></a>
+            <p>Nintendo Switch OLED - Neon <br> &#36;340.990</p>
+        </div>
+        <!--Producto 5-->
+        <div class="galeria-item">
+            <a href="producto5.html"><img src="assets/img/producto5.png" alt="Producto 5"></a>
+            <p>Call of Duty®: Black Ops 6 - zPS5 <br> &#36;49.990</p>
+        </div>
+        <!--Producto 6-->
+        <div class="galeria-item">
+            <a href="producto6.html"><img src="assets/img/producto6.png" alt="Producto 6"></a>
+            <p>Marvel Spider-Man 2® - PS5 <br> &#36;49.990</p>
+        </div>
+    </div>
+
+    <!--Footer-->
+
+<footer class="pie-pagina">
+    <h3>Contacto</h3>
+    <p>Email: info@puertogames.com</p>
+    <p>Teléfono: +56 9 2345 6789</p>
+    <p>&copy; 2025 Puerto Games. Todos los derechos reservados.</p>
+</footer>
 </body>
 </html>

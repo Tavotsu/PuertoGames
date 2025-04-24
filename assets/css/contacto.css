@@ -22,7 +22,9 @@
 /*Background general*/
 
 body{
-    background-color: var(--color-background);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://store-images.s-microsoft.com/image/apps.30270.14102493795607121.e42be5c2-793a-4463-be84-8211155dc97e.6799a0f6-635a-4bdf-8ba3-3645f662274b?h=1280);
+    background-size: cover;
+    background-repeat: no-repeat;
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
@@ -94,244 +96,69 @@ ul {
 }
 /*Fin formatos navbar*/
 
-/*Hero*/
-.hero-container{
-    position: relative;
-    width: 100%;
-    height: 400px;
+.contacto-main {
+    max-width: 500px;
+    margin: 3rem auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    padding: 2rem 2.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
 }
 
-.imagen-hero{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.6);
-    display: block;
-}
-
-.texto-hero{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    max-width: 700px;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2;
-    padding: 0 1rem;
-}
-
-.texto-hero h1{
-    font-size: 3rem;
-    color: #fff;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
-
-.texto-hero p{
-    font-size: 1.5rem;
-    color: #fff;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-}
-
-.boton-catalogo-hero {
-    display: inline-block;
-    font-family: "Inter";
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem 1.5rem;
-    margin-top: 2.5rem;
-    border-radius: 5px;
-    background-color: #007BFF; 
-    color: white; 
-    border: none;
-    cursor: pointer;
-}
-
-.boton-catalogo-hero:hover{
-    background-color: #005dc0;
-    transition: 0.3s ease-in-out;
-}
-/*Categoria */
-
-.titulo-categorias{
+.contacto-main h2 {
     font-family: "Inter", sans-serif;
-    font-size: 40px;
-    color: #242424;
+    font-size: 2rem;
     margin-bottom: 2rem;
-    margin-top: 3rem;
-    text-align: center;
+    color: var(--color-texto);
 }
 
-.categorias{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+.form-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     gap: 1.5rem;
-    justify-items: center;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1300px;
 }
 
-.categoria{
-    width: 100%;
-    max-width: 320px;
-    min-width: 200px;
-    margin: 0 auto;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: var(--color-fondo);
+.form-group {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
+    gap: 0.5rem;
 }
 
-.imagen-categoria{
-    width: 100%;
-    max-width: 320px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 10px;
-    margin-bottom: 1rem;
-}
-
-.categoria p{
-    font-size: 1.2rem;
+.form-group label {
     font-weight: 600;
-    text-align: center;
+    font-size: 1rem;
+    color: var(--color-texto);
 }
 
-
-/*Galeria Productos*/
-
-
-.galeria{
-    text-align: center;
-    background-color: var(--color-Product-background);
-    padding: 2rem 0;
-}
-
-.galeria h2{
+.form-group input, .form-group textarea {
+    padding: 0.7rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
     font-family: "Inter", sans-serif;
-    font-size: 40px;
-    color: #242424;
-    margin-bottom: 4rem;
+    resize: none;
 }
 
-
-.galeria-contenedor{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
-    gap: 1.5rem; 
-    justify-items: center; 
-} 
-
-
-.galeria-item img{
-    width: 260px;
-    height: 360px;
-    object-fit: cover; 
-    border-radius: 10px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
-}
-
-.galeria-item img:hover{
-    transform: scale(1.1);
-}
-
-.galeria-item p{
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #2c2c2c;
-    margin-top: 1.2rem;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
-}
-
-
-/*Seccion contactanos*/
-
-
-.contacto{
-    display: flex;
-    background-color: #bff1ab;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 2rem 0;
-}
-
-.contacto h2{
-    font-family: "Inter", sans-serif;
-    font-size: 40px;
-    font-weight: 700;
-    color: #242424;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-.contacto p{
-    font-family: "Inter", sans-serif;
-    font-size: 20px;
-    font-weight: 600;
-    color: #242424;
-    margin-bottom: 2rem;
-    text-align: center;
-}
-
-.contacto a{
-    display: inline-block;
-    font-family: "Inter";
-    text-decoration: none;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 1rem 1.5rem;
-    margin-top: 2rem;
-    border-radius: 5px;
-    background-color: #24c932; 
-    color: white; 
+.boton-enviar {
+    background-color: #007BFF;
+    color: #fff;
     border: none;
+    border-radius: 6px;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
     cursor: pointer;
+    transition: 0.3s;
 }
 
-.contacto a:hover{
-    background-color: #198d23;
-    transition: 0.3s ease-in-out;
+.boton-enviar:hover {
+    background-color: #0056b3;
 }
-
-/*Footer*/
-
-.pie-pagina{
-    background-color: #242424;
-    color: white;
-    text-align: center;
-    padding: 2rem 0;
-    font-size: 14px;
-}
-
-.pie-pagina h3 {
-    font-family: "Inter", sans-serif;
-    font-size: 24px;
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-
-.pie-pagina p {
-    font-family: "Inter", sans-serif;
-    font-size: 14px;
-    color: #ffffff;
-    margin-bottom: 1rem;
-}
-
-
 
 
 

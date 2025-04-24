@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Puerto Games - Pagina principal</title>
+    <title>PuertoGames - Pagina principal</title>
     <link rel="stylesheet" href="assets/css/index.css">
+    <script src="src/js/menu-hamburguesa.js"></script>
     <!-- Fuente de google: Inter -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,20 +14,21 @@
 </head>
 <body>
 <!--Barra de navegacion-->
-    <nav class="navbar">
-        <div class="logo-container">
-            <a href="index.html">
-                <img src="assets/img/logosinbg.png" alt="logo puerto games" class="logo">
-            </a>
-        </div>
-        <ul>
-            <li><a class="navbar-item" href="index.html">Inicio</a></li>
-            <li><a class="navbar-item" href="productos.html">Productos</a></li>
-            <li><a class="navbar-item" href="contacto.html">Contacto</a></li>
-        </ul>
-    </nav>
+<nav class="navbar">
+    <div class="logo-container">
+        <a href="index.html">
+            <img src="assets/img/logosinbg.png" alt="logo puerto games" class="logo">
+        </a>
+    </div>
+    <button class="menu-presionado" aria-label="Abrir menú">&#9776;</button>
+    <ul class="navbar-links">
+        <li><a class="navbar-item" href="index.html">Inicio</a></li>
+        <li><a class="navbar-item" href="productos.html">Productos</a></li>
+        <li><a class="navbar-item" href="contacto.html">Contacto</a></li>
+    </ul>
+</nav>
 <!--Seccion hero-->
-    <div class="hero-image">
+    <div class="hero-container">
         <img src="assets/img/fondo-hero.jpg" alt="fondo de hero" class="imagen-hero">
         <div class="texto-hero">
           <h1>Puerto Games</h1>
@@ -113,7 +115,7 @@
 <div class="contacto">
     
     <h2>Contáctanos</h2>
-    <p>Si tienes alguna pregunta, no dudes en ponerte en contacto con nosotros.</p>
+    <p>Si tienes alguna pregunta o deseas adquirir un producto, no dudes en ponerte en contacto con nosotros.</p>
     <a class="boton-contacto" href="contacto.html">Contáctanos</a>
 </div>
 

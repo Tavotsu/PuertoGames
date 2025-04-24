@@ -44,7 +44,7 @@ ul {
 
 .navbar{
     display: flex;
-    justify-content: right;
+    justify-content: flex-start; 
     align-items: center;
     text-decoration: none;
     background-color: var(--color-fondo);
@@ -64,6 +64,10 @@ ul {
     transition: all 0.3s ease-in-out;
 }
 
+.navbar-links {
+    margin-left: auto;
+}
+
 .navbar-item:hover{
     background-color: none;
     color: #000;
@@ -81,7 +85,6 @@ ul {
     width: 95px;
     justify-self: left;
     display: flex;
-    padding-left: 20px;
 }
 
 .menu-presionado{

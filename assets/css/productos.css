@@ -232,13 +232,19 @@ ul {
         padding: 0.8rem 1rem;
     }
 
-   
+    .titulo-galeria{
+        font-size: 30px;
+        width: auto;
+    }
+
     .galeria-contenedor{
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 1.5rem; 
     }
+
+    
 
     .galeria-item img{
         width: 90%; 

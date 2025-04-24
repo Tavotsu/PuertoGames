@@ -235,10 +235,6 @@ ul {
         height: auto;
     }
 
-    .galeria-item p{
-        text-align: center;
-    }
-
     .menu-presionado{
         display: none;
         background: none;

@@ -2,13 +2,16 @@
 :root{
     --color-texto: #242424;
     --color-fondo: #f5f5f5;
-    --padding-general: 1.5rem;
+    --padding-general: 1.5rem; 
+    --color-background: #d9d9d9;
+    --color-Product-background: #c4e64a;
     --inter-navbar {
         font-family: "Inter", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;
         font-style: normal;
     };
+   
 }
 /*Reset general*/
 *{
@@ -16,6 +19,17 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Background general*/
+
+body{
+    background-color: var(--color-background);
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--color-texto);
+}
+
 /*Formatos para navbar*/
 li{
     list-style: none;
@@ -115,16 +129,188 @@ ul {
     transition: 0.3s ease-in-out;
 }
 
+
+
+
 /*Categorias*/
+.titulo-categorias{
+    font-family: "Inter";
+    font-size: 40px;
+    text-align: center;
+    margin-top: 2rem;
+    color: var(--color-texto);
+}
+
+.divisor {
+    width: 100%;
+    margin: 0;
+    border: none;
+    height: 5px;
+    background-color: #000000;
+}
+
+.categorias{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.categoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1.3rem;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: var(--color-fondo);
+}
+
+.imagen-categoria{
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.categoria p{
+    font-family: "Inter","sans-serif";
+    color: var(--color-texto);
+    font-weight: 500;
+}
+
+.categoria:hover{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+}
 
 
-/*Galeria imagenes*/
+/*Galeria Productos*/
+
+
+.galeria {
+    text-align: center;
+    background-color: var(--color-Product-background);
+    padding: 2rem 0;
+}
+
+.galeria h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    color: #242424;
+    margin-bottom: 2rem;
+}
+
+
+.galeria-contenedor {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 1.5rem; 
+    justify-items: center; 
+} 
+
+
+.galeria-item img {
+    width: 260px;
+    height: 360px;
+    object-fit: cover; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.galeria-item img:hover {
+    transform: scale(1.1);
+}
+
+.galeria-item p {
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #2c2c2c;
+    margin-top: 1.2rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
 
 
 /*Seccion contactanos*/
 
 
+.contacto{
+    display: flex;
+    background-color: #bff1ab;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.contacto h2{
+    font-family: "Inter", sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    color: #242424;
+    margin-bottom: 1rem;
+}
+
+.contacto p{
+    font-family: "Inter", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #242424;
+    margin-bottom: 2rem;
+}
+
+.contacto a{
+    display: inline-block;
+    font-family: "Inter";
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 1rem 1.5rem;
+    margin-top: 2rem;
+    border-radius: 5px;
+    background-color: #24c932; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+}
+
+.contacto a:hover{
+    background-color: #198d23;
+    transition: 0.3s ease-in-out;
+}
+
 /*Footer*/
+
+.pie-pagina{
+    background-color: #242424;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 14px;
+}
+
+.pie-pagina h3 {
+    font-family: "Inter", sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.pie-pagina p {
+    font-family: "Inter", sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+
+
 
 
 /*Media querys*/
